@@ -1,0 +1,198 @@
+<html>
+
+<head>
+    <title>OPE</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="empleo.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-toggle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>  -->
+    <link rel="stylesheet" type="text/css" href="plantilla.css" />
+</head>
+
+<body>
+    <div id="barraSuperior">
+		<img id = "imagenSuperior" src="logo.PNG" onclick = "cambiarSeccion('0')"></img>
+		<img id = "imagenSuperior2" src="logo2.PNG" onclick = "cambiarSeccion('0')"></img>
+		<p id = "titulo" onclick = "cambiarSeccion('0')"> OFICINA DE PRÁCTICAS Y EMPLEO </p>
+		<p id = "tituloOPE2" onclick = "cambiarSeccion('0')"> OPE </p>
+    </div>
+	<div id="menu">
+		<nav>
+			<ul>
+				<li id="enlace1" onclick = "cambiarSeccion('1')">Noticias</li>
+				<li id="enlace2" onclick = "cambiarSeccion('2')">Empleo</li>
+				<li id="enlace3" onclick = "cambiarSeccion('3')">Becas</li>
+				<li id="enlace4" onclick = "cambiarSeccion('4')">Formación</li>
+				<li id="actual" onmouseover = "mostrarSubMenu()">Estudiantes ⌵
+					<div class ="submenu" style = "margin-left: -10px" onmouseleave = "ocultarSubMenu()">
+						<nav>
+							<ul>
+								<li class = "subseccion" id="sub1" onclick = "cambiarSubseccion('1')" style = "height: 55px">Prácticas extracurriculares</li>
+								<li class = "subseccion" id="sub2" onclick = "cambiarSubseccion('2')">GIPE</li>
+							</ul>
+						</nav>
+					</div>
+				</li>
+				<li id="enlace6" onclick = "cambiarSeccion('6')">Seguros</li>
+				<li class="icon">
+					 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+    <div id="panelPrincipal">
+
+	<div class = "panelContenido" id = "panel1">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Información útil para las prácticas externas extracurriculares. </strong></h1>
+			<p>
+				Las prácticas son una actividad de naturaleza formativa, cuyo objetivo es permitir al estudiante la aplicación de los conocimientos adquiridos en su formación académica, favoreciendo la adquisición de competencias que preparan para el ejercicio de actividades profesionales y facilitan su incorporación al mercado de trabajo.  
+			</p>
+			<strong>Fines</strong>
+			<p>ECon el desarrollo de las prácticas se pretende alcanzar los siguientes fines:  
+
+		* Contribuir a la formación integral de los estudiantes, complementando sus enseñanzas teóricas y prácticas.
+
+		* Facilitar el conocimiento de la metodología de trabajo adecuada a la realidad profesional en que los estudiantes habrán de operar, contrastando y aplicando los conocimientos adquiridos.
+
+		* Favorecer el desarrollo por parte de los estudiantes de competencias: técnicas, metodológicas, personales y participativas. </p>
+		<strong>Régimen jurídico.</strong>
+					<p>
+					Real Decreto 592/2014, de 11 de julio, por el que se regulan las prácticas académicas externas de los estudiantes universitarios.
+
+		Real Decreto 1493/2011, de conformidad con el cual los estudiantes universitarios en prácticas remuneradas quedan comprendidos en el Régimen General de la Seguridad Social. La acción protectora será la correspondiente al Régimen General de la Seguridad Social, con la única exclusión de la protección por desempleo.  
+
+		Real Decreto Ley 8/2014, de 4 de julio, de aprobación de medidas urgentes para el crecimiento, la competitividad y la eficiencia; por el que se establece, en su disposición adicional vigesimoquinta, la bonificación en la cotización a la Seguridad Social por las prácticas curriculares externas de los estudiantes universitarios y de formación profesional.
+					</p>
+		<strong>Requisitos que debe cumplir la entidad para acoger a estudiantes en prácticas.</strong>
+		<p>
+		 Suscribir un Programa de Cooperación Educativa con la Universidad (Convenio).
+
+		* Establecer un programa de formación para el estudiante.
+
+		* Nombrar un tutor que dentro de la empresa se responsabilice de la formación del estudiante.  
+		</p>
+		<strong>Procedimiento para la entidad.</strong>
+		<p>
+		* Suscribir un Programa de Cooperación Educativa con la Universidad (Convenio).
+
+		* Establecer un programa de formación para el estudiante.
+
+		* Nombrar un tutor que dentro de la empresa se responsabilice de la formación del estudiante.  
+
+		Procedimiento para la entidad.
+		<p>.- Registro de la entidad en el Pograma de Prácticas y ​validación de su clave de acceso por correo electrónico.</p>
+
+		2.- Firma del Convenio de Cooperación Educativa entre la entidad y la Universidad Complutense de Madrid.
+
+		3.- Grabación de la oferta y solicitud de candidatos 
+
+		4.- Publicación de ofertas. Los estudiantes interesados se inscribirán e​n​ el proceso de selección. Si la entidad tiene un candidato preseleccionado deberá indicarlo en la oferta.
+
+		5.- Preselección de candidatos. La OPE ​ preselecciona a los candidatos más adecuados para la oferta y facilita sus curiculum vitae a la entidad.
+
+		​6.- La entidad comunica a la OPE el resultado del proceso de selección.
+		 
+		7.- El candidato seleccionado debe recoger en la OPE con anterioridad a la fecha de inicio su anexo en el que se especifican los detalles de la práctica, debiendo presentarlo en la empresa para la cumplimentación de las firmas de todas las partes.
+		8.- Ampliación del periodo de prácticas. 15 días antes de finalizar el período de prácticas del estudiante, la entidad podrá proponer su ampliación a través de la oferta grabada en GIPE​, ampliación ​que requerirá el acuerdo de todas las partes y la validación de la OPE.
+
+		Teléfono de información: 91 3941294/95
+		</p>
+		<strong>Credencial de la práctica</strong>
+		<p>La OPE de la Universidad Complutense de Madrid solo reconocerá las prácticas que se hayan realizado con las formalidades descritas de este documento (Convenio con la empresa o institución y credencial de la práctica).  </p>
+
+		<strong>Estudiantes destinatarios</strong>
+		<p>
+			<li>Alumnos de la UCM matriculados en estudios oficiales y con al menos 120 créditos superados.</li>
+		<li>Estudiantes de otras universidades españolas o extranjeras que, en virtud de programas de movilidad académica o de convenios, se encuentran cursando estudios en la Universidad Complutense de Madrid.</li>
+		</p>
+		<strong>Funciones a realizar</strong>
+		<p>Las prácticas tendrán en general carácter interdisciplinar, pudiendo versar, conjunta o separadamente, sobre cualquiera de las materias de los estudios que estén cursando.
+
+		Además de la formación en tareas relacionadas con la titulación, el estudiante en prácticas puede realizar cualquier labor auxiliar relacionada con sus funciones y las del Departamento en el que esté y que le proporcionará formación y experiencia sobre las relaciones y la integración en entornos laborales.   </p>
+		<strong>Periodo, horario, jornada y lugar de desarrollo de la práctica </strong>
+		<p>* Serán los pactados y formalizados en la credencial de la práctica.
+
+		* El horario y jornada deberán permitir al estudiante seguir sus estudios.
+
+		* Se establece un máximo de cinco horas diarias en periodo lectivo y 7 horas en vacaciones de verano.
+
+		* El periodo inicial de la práctica no será inferior a tres meses ni superior a seis, si bien se pueden contemplar periodos inferiores y prórrogas.
+
+		* La empresa deberá facilitar al estudiante el cumplimiento de sus obligaciones académicas.  </p>
+		<strong>Seguro médico y de accidentes</strong>
+		<p>Los estudiantes están cubiertos por el seguro escolar hasta los 28 años. Los estudiantes mayores de esa edad deberán suscribir por ellos mismos o a través de la empresa o institución un seguro privado.  
+
+		Todos los estudiantes están cubiertos por un seguro de responsabilidad civil.</p>
+		<strong>Ayuda el Estudio</strong>		
+		<p>La Universidad Complutense de Madrid recomienda a las empresas e instituciones que ofrezcan a los estudiantes una ayuda al estudio que le permita desempeñar su periodo de prácticas en condiciones no gravosas.  
+
+		A modo orientativo, la UCM retribuye a sus estudiantes en condiciones similares (becarios) con una cantidad que asciende aproximadamente a los 450 euros al mes por 5 horas.</p>
+
+		<strong>Importes de cotización en Seguridad Social 2016</strong>
+		<p>
+			<li> Prácticas curriculares con ayuda al estudio. El alta es obligatoria y están bonificadas al 100% en la cotización.</li>
+
+		<li> Prácticas curriculares sin ayuda al estudio. El alta no es obligatoria. </li>																				
+
+		<li> Prácticas extracurriculares con ayuda al estudio. El alta es obligatoria y los importes de la cotización son 35,24 € para la empresa y 6,18 € para el estudiante.</li>
+
+		 <li>Prácticas extracurriculares sin ayuda al estudio. El alta no es obligatoria.</li>
+		 </p>
+		 <p>
+		<a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/docs/3-2013-09-05-R.%20D.%20Cotizaci%C3%B3n%20de%20la%20Seguridad%20Social..pdf"> Real Decreto 1493/2011.</a></p>
+
+		<p><a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/media/www/pag-1442/BOE-A-2013-9195.pdf">Resolución de 19 agosto 2013.</a></p>
+
+		<p><a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/docs/3-2013-09-05-Sentencia%20Tribunal%20Supremo%20boe.pdf">Ley 18/2014.</a></p>
+
+		<p><a style="color: black; text-decoration: none;" href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2015-11644">Ley 48/2015</a></p>
+		</p>
+
+		</div>
+		
+	<br>
+	<br>
+	<br>
+	</div>
+	
+	
+	<div class = "panelContenido" id = "panel2">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Gestión Integral de Prácticas Externas</strong></h1>
+			<p>Accede a GIPE para la gestión y seguimiento de las prácticas académicas externas de la UCM
+			<ul>
+				<li><a style = "cursor: pointer" href = "https://gipe.ucm.es/empresas/authempresas.php?volver=/index.php&idioma=&u="><strong>Acceso a GIPE para empresas:</strong></a> Alta de entidades, firma de convenio y grabación y seguimiento de ofertas de prácticas.
+				<li><a style = "cursor: pointer" href = "https://gipe.ucm.es/authestu.php?volver=/index.php"><strong>Acceso a GIPE para estudiantes:</strong></a> Alta de estudiantes, información de ofertas y seguimiento de sus procesos de selección.
+				<li><a style = "cursor: pointer" href = "https://gipe.ucm.es/admin/auth.php?volver=https://gipe.ucm.es/admin/index.php"><strong>Acceso a GIPE para gestores:</strong></a> Alta de gestores de la UCM, tutores académicos y tutores de entidad, gestión y segumiento de ofertas de prácticas
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+	</div>
+	<div id = "footer">
+		<div id = "redesSociales">
+			<img class = "iconoRedSocial" src = "img/twitter-icon.png"></img>
+			<img class = "iconoRedSocial" src = "img/fb-icon.png" style = "height: 32px; margin-top: -5px"></img>
+		</div>
+		<div id = "informacionLegal">
+			<p> ¿Qué es la OPE? </p>
+			<p> Localización y contacto </p>
+			<p> Aviso legal </p>
+		</div>
+	</div>
+</body>
+
+</html>

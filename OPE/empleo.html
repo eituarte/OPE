@@ -1,0 +1,219 @@
+<html>
+
+<head>
+    <title>OPE</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="empleo.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-toggle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>  -->
+    <link rel="stylesheet" type="text/css" href="plantilla.css" />
+</head>
+
+<body>
+    <div id="barraSuperior">
+		<img id = "imagenSuperior" src="logo.PNG" onclick = "cambiarSeccion('0')"></img>
+		<img id = "imagenSuperior2" src="logo2.PNG" onclick = "cambiarSeccion('0')"></img>
+		<p id = "titulo" onclick = "cambiarSeccion('0')"> OFICINA DE PRÁCTICAS Y EMPLEO </p>
+		<p id = "tituloOPE2" onclick = "cambiarSeccion('0')"> OPE </p>
+    </div>
+	<div id="menu">
+		<nav>
+			<ul>
+				<li class = "seccionMenu" id="enlace1" onclick = "cambiarSeccion('1')">Noticias</li>
+				<li id="actual" onmouseover = "mostrarSubMenu()">Empleo  ⌵
+					<div class ="submenu" style = "margin-left: -10px" onmouseleave = "ocultarSubMenu()">
+						<nav>
+							<ul>
+								<li class = "subseccion" id="sub1" onclick = "cambiarSubseccion('1')">Compluemprende</li>
+								<li class = "subseccion" id="sub2" onclick = "cambiarSubseccion('2')">Empleo público</li>
+								<li class = "subseccion" id="sub3" onclick = "cambiarSubseccion('3')">Ofertas de empleo</li>
+								<li class = "subseccion" id="sub4" onclick = "cambiarSubseccion('4')">Currículum</li>
+							</ul>
+						</nav>
+					</div>
+				</li>
+				<li class = "seccionMenu" id="enlace3" onclick = "cambiarSeccion('3')">Becas</li>
+				<li class = "seccionMenu" id="enlace4" onclick = "cambiarSeccion('4')">Formación</li>
+				<li class = "seccionMenu" id="enlace5" onclick = "cambiarSeccion('5')">Estudiantes</li>
+				<li class = "seccionMenu" id="enlace6" onclick = "cambiarSeccion('6')">Seguros</li>
+				<li class="icon">
+					 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+    <div id="panelPrincipal">
+
+	<div class = "panelContenido" id = "panel1">
+		<div class = "panelEmpleo">
+		<h1 style = "text-align: center"><strong>COMPLUEMPRENDE</strong></h1>
+		<img class = "imagenTexto" src = "img/compluemprende.PNG"></img>
+		<p> Es la Oficina Complutense del Emprendedor, dependiente del Vicerrectorado de Transferencia de Conocimiento y Emprendimiento de la UCM, creada para apoyar a la comunidad universitaria que tenga una idea de negocio.</p>
+		<p> En la oficina podrás encontrar: </p>
+		<ul>
+			<li>Información sobre como desarrollar un proyecto empresarial</li>
+			<li>Asesoramiento en el proceso de creación de una empresa</li>
+			<li>Apoyo en el diseño de modelos de negocio</li>
+			<li>Formación para el desarrollo de capacidades empresariales</li>
+		</ul>
+		<br>
+		<p>Nuestro objetivo principal es acompañar y asesorar a los emprendedores en el proceso de evaluación de su idea de negocio o en el desarrollo de un plan de empresa, así como resolver aquellas dudas que puedan surgir en la fase de creación de la empresa.</p>
+		<p> <strong>COMPLUEMPRENDE</strong> colabora además con otras entidades y programas relacionados con el emprendimiento:</p>
+		<ul>
+			<li>Participa en varios programas que desarrolla el Parque Científico de Madrid www.fpcm.es.</li>
+			<li>Representa a la UCM en RedEmprendia www.redemprendia.org.</li>
+			<li>Participa en el Certamen para emprendedores Startup Programme www.startupprogramme.es.</li>
+			<li>Colabora con el Programa YUZZ www.yuzz.org</li>
+		</ul>
+
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Actividades habituales</strong></h1>
+
+			<p>Compluemprende ofrece de manera continuada durante todo el año diversas actividades como:</p>
+			<ul>
+			<li>Asesoramiento personal a emprendedores</li>
+			<li>Formación y orientación para la creación de empresas</li>
+			<li>Taller de habilidades empresariales (una o dos ediciones anuales)</li>
+			</ul>
+			<p>Alguna de las actividades están reconocidas con créditos de libre configuración y ECTS.<p>			 
+
+			<p>Si quieres saber algo más sobre como se crea una empresa o quieres que te orientemos en el desarrollo de tu idea</p>
+			<p><strong>MÁNDANOS UN EMAIL O LLÁMANOS</strong></p>
+
+			<p>Estamos en:</p>
+
+			<p>Ciudad Universitaria. Edificio de Estudiantes. Avda. Complutense s/n. Madrid </p>
+
+			<p>Somosaguas. Fac. de CC. Económicas y Empresariales. Ed. 6 "Las Caracolas". Pozuelo de Alarcón (Madrid)</p>
+
+			<p>91 394 29 80</p>
+
+			<p>emprende@ucm.es </p>
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>¿Quién puede acercarse a la Oficina?</strong></h1>
+			<p>Si eres estudiante de cualquier programa de nuestra universidad, has sido alumno de la Universidad Complutense de Madrid o eres personal de la UCM, en <strong>COMPLUEMPRENDE</strong> encontrarás un lugar donde recibir información, apoyo y asesoramiento para facilitarte el proceso de creación de tu proyecto.</p>
+			<p>Vicerrectorado (Edificio de Alumnos - Avenida Complutense s/n - 28040 - Madrid)</p>
+			<p>© 2006 - Universidad Complutense de Madrid (Ciudad Universitaria - 28040 Madrid - Tel. +34 914520400)</p> 
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+	
+	
+	
+	
+	<div class = "panelContenido" id = "panel2">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Empleo público</strong></h1>
+			<p>El empleo público es el empleo que ofrecen las distintas administraciones públicas.</p>
+
+			<p>El acceso al empleo público está fundamentado en los principios de igualdad, mérito, capacidad y publicidad. Estas condiciones de objetividad, junto con el hecho de obtener un trabajo estable y la posibilidad de desempeñar funciones al servicio del interés general, hacen del empleo público una opción muy interesante a la hora de decidir sobre el futuro profesional.
+
+			<p>Sus principales características son:
+			<ul>
+			<li>El sistema de selección se basa en la acreditación de los conocimientos teóricos y prácticos establecidos en un temario previamente publicado
+
+			<li>Las distintas administraciones publican cada año el número de plazas que van a ofrecer en los distintos Cuerpos y Escalas de Funcionarios (regulados por el régimen específico de la Función Pública) y de Personal Laboral (regulados por el Estatuto de los Trabajadores, el correspondiente Convenio Colectivo y las normas aplicables al personal al servicio de las administraciones públicas)
+
+			<li>Dentro del año publican las distintas convocatorias con el número de plazas, sistema de selección y temario
+			</ul>
+			<p>Los aspirantes que superen las pruebas para funcionarios de carrera o para personal laboral con contrato indefinido tendrán, en principio, un empleo estable y el derecho a la promoción profesional.
+			<div id = "botonAceptar" style = "width: 200px">Accede al tablón</div>
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Estructura</strong></h1>
+
+			<p>La estructura del empleo público se fundamenta en los siguientes conceptos:
+			
+			<p><strong>Grupo de Titulación:</strong> Los Cuerpos y Escalas de Funcionarios se distribuyen, de acuerdo con la titulación exigida para su ingreso, en los siguientes grupos:
+			<ul>
+			<li>Grupo A. dividido en dos Subgrupos A1 y A2. Para el acceso a los cuerpos o escalas de este Grupo se exigirá estar en posesión del título universitario de Grado. En aquellos supuestos en los que la Ley exija otro título universitario será éste el que se tenga en cuenta. La clasificación de los cuerpos y escalas en cada Subgrupo estará en función del nivel de responsabilidad de las funciones a desempeñar y de las características de las pruebas de acceso.
+			<li>Grupo B. Para el acceso a los cuerpos o escalas del Grupo B se exigirá estar en posesión del título de Técnico Superior. 
+			<li>Grupo C. Dividido en dos Subgrupos, C1 y C2, según la titulación exigida para el ingreso. C1: título de bachiller o técnico. C2: título de graduado en educación secundaria obligatoria.
+			</ul>
+			<p><strong>Cuerpo o Escala:</strong> Las plazas se convocan para determinados cuerpos o escalas que realizan sus funciones en distintos ámbitos de las administraciones.  Para presentarse a las correspondientes pruebas se exigirá un nivel de titulación de acuerdo con los grupos anteriores 
+
+			<p><strong>Puesto de Trabajo:</strong> Los puestos de trabajo asignados a funcionarios se clasifican en 30 niveles. El nivel del puesto de trabajo determina, entre otras cosas, la retribución que se va a percibir. Dependiendo del Cuerpo o Escala al que se pertenece y el grupo en el que se encuadra éste se podrán desempeñar puestos incluidos en determinados intervalos de niveles.
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+	
+	
+	
+	
+	<div class = "panelContenido" id = "panel3">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Ofertas de empleo</strong></h1>
+			
+			<p>Con este servicio la OPE pretende crear un espacio de encuentro directo entre universitarios y empresas, procurar una respuesta más rápida y de mayor alcance en los procesos de selección.
+
+			<p>Información para usuarios registrados en la OPE:
+
+			<p>Este recurso está dirigido a empresas colaboradoras y a  titulados registrados en las bases de datos del COIE de Empleo.
+			<ul>
+				<li>Empresas: Recibirán candidatos interesados en las ofertas anunciadas. Desde este espacio pueden consultar las ofertas existentes en este foro. Para ofertar deben hacerlo desde su propia ficha.
+				<li>Candidatos: Podrán remitir directamente su CV a las ofertas anunciadas en este espacio en las que estén interesados, siempre que su perfil se adecúe a los requerimientos de las empresas. ficha.
+			</ul>
+			<p>Información para usuarios no registrados en la OPE:
+
+			<p>Los candidatos interesados en conocer estas ofertas y que no estén dados de alta en las bases de datos del COIE deberán formalizar su inscripción. 
+			<div id = "botonAceptar">Acceder</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class = "panelContenido" id = "panel4">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Bolsa de Trabajo</strong></h1>
+			
+			<p><strong>Destinatarios (TITULADOS):</strong></p>
+
+			<p>Candidatos para los que no hayan pasado más de cinco años desde la finalización de los estudios en la UCM de: Licenciatura o Diplomatura, Grados, Títulos Propios, Master Oficiales o Doctorados. También podrán inscribirse Titulados de otras Universidades que se encuentren cursando estudios oficiales o propios en nuestra Universidad.
+			<p>Inscripción:
+			<ol>
+				<li>Registro del C.V.: A través de este <strong>FORMULARIO</strong>.
+				<li>Se procederá a la comprobación de datos (expediente académico) y a la activación de la candidatura.
+				<li>Si no es titulado de la UCM deberá entregar en el COIE en un plazo de 10 días; acreditación de haber finalizado su titulación. (Copia del Título o resguardo de haberlo solicitado o certificación.)
+				<li>Una vez que su CV ha sido dado de alta e incluido en el servicio de preselección de candidatos, recibirá un aviso cada dos meses para actualizarlo con el fin de continuar optando a ofertas de empleo. MUY IMPORTANTE tener actualizado su C.V.
+				<li>Para consultar las ofertas de empleo que tenemos publicadas ha de acceder a “Ofertas de empleo” y remitir su C.V., si tiene interés en el puesto ofertado.
+			</ol>
+		</div>
+	</div>
+	
+	
+	
+	
+	<div id = "footer">
+		<div id = "redesSociales">
+			<img class = "iconoRedSocial" src = "img/twitter-icon.png"></img>
+			<img class = "iconoRedSocial" src = "img/fb-icon.png" style = "height: 32px; margin-top: -5px"></img>
+		</div>
+		<div id = "informacionLegal">
+			<p> ¿Qué es la OPE? </p>
+			<p> Localización y contacto </p>
+			<p> Aviso legal </p>
+		</div>
+	</div>
+	</div>
+	
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <title>OPE</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="empleo.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-toggle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>  -->
+    <link rel="stylesheet" type="text/css" href="plantilla.css" />
+</head>
+
+<body>
+    <div id="barraSuperior">
+		<img id = "imagenSuperior" src="logo.PNG" onclick = "cambiarSeccion('0')"></img>
+		<img id = "imagenSuperior2" src="logo2.PNG" onclick = "cambiarSeccion('0')"></img>
+		<p id = "titulo" onclick = "cambiarSeccion('0')"> OFICINA DE PRÁCTICAS Y EMPLEO </p>
+		<p id = "tituloOPE2" onclick = "cambiarSeccion('0')"> OPE </p>
+    </div>
+	<div id="menu">
+		<nav>
+			<ul>
+				<li id="enlace1" onclick = "cambiarSeccion('1')">Noticias</li>
+				<li id="enlace2" onclick = "cambiarSeccion('2')">Empleo</li>
+				<li id="enlace3" onclick = "cambiarSeccion('3')">Becas</li>
+				<li id="actual" onmouseover = "mostrarSubMenu()">Formación ⌵
+					<div class ="submenu" style = "margin-left: -10px" onmouseleave = "ocultarSubMenu()">
+						<nav>
+							<ul>
+								<li class = "subseccion" id="sub1" onclick = "cambiarSubseccion('1')">Plan UCM</li>
+								<li class = "subseccion" id="sub1" onclick = "cambiarSubseccion('2')">Cursos FDI</li>
+								<li class = "subseccion" id="sub4" onclick = "cambiarSubseccion('5')" style = "height: 55px">Reconocimiento de créditos</li>
+							</ul>
+						</nav>
+					</div>
+				</li>
+				<li id="enlace5" onclick = "cambiarSeccion('5')">Estudiantes</li>
+				<li id="enlace6" onclick = "cambiarSeccion('6')">Seguros</li>
+				<li class="icon">
+					 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+    <div id="panelPrincipal">
+
+	<div class = "panelContenido" id = "panel1">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Plan de Formación al Empleo de la UCM</strong></h1>
+			<img class = "imagenTexto" src = "img/clavesEmpleo.png" style = "cursor: pointer"></img>
+			<p> Una de las áreas estratégicas de la Oficina de Prácticas y Empleo de la Universidad Complutense es la formación y orientación para el empleo.
+			<p> Los conocimientos específicos que se imparten en nuestras titulaciones deben ser complementados necesariamente con una formación destinada a incrementar la empleabilidad del estudiante, a través de la adquisición de competencias fundamentales para el mercado de trabajo y del conocimiento y práctica de herramientas y técnicas de vital importancia para la búsqueda de empleo.
+			<p> El plan UCM de Formación para el Empleo comprende una serie de cursos cortos o seminarios, denominados <strong> "Claves para el empleo"</strong>, que se imparten en una sola sesión de 3 horas o dos sesiones de 3 horas cada una. Tras la realización de distintas "claves" que sumen un total de 15 horas se puede solicitar el reconocimiento de 1 crédito ECTS.
+			<p> Las personas interesadas en profundizar en alguna temática concreta, ccuentan con el <strong> "Programa de Desarrollo Profesional"</strong>, que incluye actividades formativas de 30 horas (6 sesiones), por las que se puede solicitar un reconocimiento de 2 créditos ECTS.
+			<p> Todas las actividades propuestas tienen un gran componente práctico, por lo que están diseñadas para grupos formados entre 8 y 15 estudiantes. Por otro lado, y como complemento a estas alternativas formativas, la Oficina de Prácticas y Empleo pone a disposición de los estudiantes y titulados un <strong>servicio de atención individualizada</strong> para orientar o reorientar su carrera profesional.
+			
+		</div>		
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Meses programados</strong></h1>
+			<p style = "cursor: pointer"><strong>Meses de abril y mayo, claves para el empleo.
+			<p style = "cursor: pointer">Mes de junio, claves para el empleo.
+			<p style = "cursor: pointer">Mes de julio, programa de desarrollo profesional y de claves para el empleo.
+			<p style = "cursor: pointer">Mes de septiembre, programa de desarrollo profesional y de claves para el empleo.
+			<p style = "cursor: pointer">Mes de octubre, 2016/17 claves para el empleo.
+			<p style = "cursor: pointer">Mes de noviembre de 2016/17, claves para el empleo.
+			<p style = "cursor: pointer">Mes de diciembre de 2016/17, claves para el empleo.
+			<p style = "cursor: pointer">Mes de enero de 2016/17, claves para el empleo.
+			<p style = "cursor: pointer">Mes de febrero de 2016/17, claves para el empleo.</strong>
+		</div>	
+		<br>
+		<br>
+		<br>
+	</div>
+	
+	
+	
+	<div class = "panelContenido" id = "panel2">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Cursos de Formación de la FDI</strong></h1>
+			<p>Nuestros cursos son para todos, seas o no miembro o estudiante de la Universidad Complutense de Madrid. Tanto si eres estudiante como profesional, nuestros cursos te ayudarán a adquirir nuevas habilidades y conocimientos o perfeccionar las ya conocidas, siempre con el objetivo de mejorar tu productividad y rendimiento en tu área académica o profesional.
+			<p>Ofrecemos una <strong>gran variedad de cursos</strong>, que se adaptan a estudiantes o profesionales de cualquier nivel y en distintas áreas temáticas: Ofimática, Internet o Tecnologías Informáticas.
+			<p><strong>Te vamos a ayudar.</strong> Para ello contamos con Profesores de la Facultad de Informática de la Universidad Complutense que ejercen como tutores permanentes del curso, corrigiendo tus ejercicios, resolviendo tus dudas a través del correo, mediante los foros o incluso con tutorías presenciales.
+			<a href = "http://cursosinformatica.ucm.es/index.html"><div id = "botonAceptar" style = "width: 200px" title = "Hola Juanan :)" >Todos nuestros cursos</div></a>
+		</div>	
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>A distancia</strong></h1>
+			<p>Nuestros cursos son completamente a distancia, con una duración equivalente a 40 horas presenciales y un precio único de 90 euros por curso.
+			<p>Los cursos online se imparten a través del Campus Virtual de la UCM en la plataforma Moodle, que ofrece todo lo necesario para realizar el curso online: instrucciones y documentos de ayuda, apuntes en formato web, correo interno, foros de debate, herramientas de entrega, etc.
+			<p>Puedes realizarlos en cualquier lugar, cualquier momento y a través de cualquier dispositivo. Los cursos son eminentemente prácticos y ofrecen una forma cómoda de aprendizaje, sin horarios, en días laborables o festivos, a tu ritmo y en cualquier lugar con acceso a Internet, mediante ordenador de sobremesa o dispositivo móvil.
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Nuestra oferta formativa</strong></h1>
+			<p>Tenemos una <strong>Convocatoria Anual</strong> abierta de noviembre a septiembre para que hagas tranquilamente los cursos. Hay 5 convocatorias de examen a lo largo de todo el año.
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Certificados y créditos </strong></h1>
+			<p>Obtendrás un Título oficial de Aprovechamiento del Curso sin necesidad de examen.
+			<p>También puedes obtener un Diploma de aptitud superando un examen final presencial en un aula de informática de la Universidad Complutense.
+			<p>Los estudiantes universitarios que superen el examen presencial también pueden reconocer 2 créditos ECTS optativos o 4 créditos de LC por los cursos CFI superados.
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+	
+	
+	
+	<div class = "panelContenido" id = "panel3">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Plan de Formación al Empleo de la UCM</strong></h1>
+			<img class = "imagenTexto" src = "img/clavesEmpleo.png" style = "cursor: pointer"></img>
+			<p> Una de las áreas estratégicas de la Oficina de Prácticas y Empleo de la Universidad Complutense es la formación y orientación para el empleo.
+			<p> Los conocimientos específicos que se imparten en nuestras titulaciones deben ser complementados necesariamente con una formación destinada a incrementar la empleabilidad del estudiante, a través de la adquisición de competencias fundamentales para el mercado de trabajo y del conocimiento y práctica de herramientas y técnicas de vital importancia para la búsqueda de empleo.
+			<p> El plan UCM de Formación para el Empleo comprende una serie de cursos cortos o seminarios, denominados <strong> "Claves para el empleo"</strong>, que se imparten en una sola sesión de 3 horas o dos sesiones de 3 horas cada una. Tras la realización de distintas "claves" que sumen un total de 15 horas se puede solicitar el reconocimiento de 1 crédito ECTS.
+			<p> Las personas interesadas en profundizar en alguna temática concreta, ccuentan con el <strong> "Programa de Desarrollo Profesional"</strong>, que incluye actividades formativas de 30 horas (6 sesiones), por las que se puede solicitar un reconocimiento de 2 créditos ECTS.
+			<p> Todas las actividades propuestas tienen un gran componente práctico, por lo que están diseñadas para grupos formados entre 8 y 15 estudiantes. Por otro lado, y como complemento a estas alternativas formativas, la Oficina de Prácticas y Empleo pone a disposición de los estudiantes y titulados un <strong>servicio de atención individualizada</strong> para orientar o reorientar su carrera profesional.
+			
+		</div>		
+	</div>
+	
+	
+	
+	
+	<div class = "panelContenido" id = "panel4">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Plan de Formación al Empleo de la UCM</strong></h1>
+			<img class = "imagenTexto" src = "img/clavesEmpleo.png" style = "cursor: pointer"></img>
+			<p> Una de las áreas estratégicas de la Oficina de Prácticas y Empleo de la Universidad Complutense es la formación y orientación para el empleo.
+			<p> Los conocimientos específicos que se imparten en nuestras titulaciones deben ser complementados necesariamente con una formación destinada a incrementar la empleabilidad del estudiante, a través de la adquisición de competencias fundamentales para el mercado de trabajo y del conocimiento y práctica de herramientas y técnicas de vital importancia para la búsqueda de empleo.
+			<p> El plan UCM de Formación para el Empleo comprende una serie de cursos cortos o seminarios, denominados <strong> "Claves para el empleo"</strong>, que se imparten en una sola sesión de 3 horas o dos sesiones de 3 horas cada una. Tras la realización de distintas "claves" que sumen un total de 15 horas se puede solicitar el reconocimiento de 1 crédito ECTS.
+			<p> Las personas interesadas en profundizar en alguna temática concreta, ccuentan con el <strong> "Programa de Desarrollo Profesional"</strong>, que incluye actividades formativas de 30 horas (6 sesiones), por las que se puede solicitar un reconocimiento de 2 créditos ECTS.
+			<p> Todas las actividades propuestas tienen un gran componente práctico, por lo que están diseñadas para grupos formados entre 8 y 15 estudiantes. Por otro lado, y como complemento a estas alternativas formativas, la Oficina de Prácticas y Empleo pone a disposición de los estudiantes y titulados un <strong>servicio de atención individualizada</strong> para orientar o reorientar su carrera profesional.
+			
+		</div>		
+	</div>
+	
+	
+	
+	<div class = "panelContenido" id = "panel5">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Solicitud de reconocimiento de créditos ECTS</strong></h1>
+			<img style = "width: 100%" style = "margin: auto" src = "img/reconCred.png" style = "cursor: pointer"></img>
+			<div id = "botonAceptar" style = "width: 200px">Descargar solicitud en PDF</div>
+		</div>		
+		<br>
+		<br>
+		<br>
+	</div>
+	
+	
+	
+	</div>
+	<div id = "footer">
+		<div id = "redesSociales">
+			<img class = "iconoRedSocial" src = "img/twitter-icon.png"></img>
+			<img class = "iconoRedSocial" src = "img/fb-icon.png" style = "height: 32px; margin-top: -5px"></img>
+		</div>
+		<div id = "informacionLegal">
+			<p> ¿Qué es la OPE? </p>
+			<p> Localización y contacto </p>
+			<p> Aviso legal </p>
+		</div>
+	</div>
+</body>
+
+</html>

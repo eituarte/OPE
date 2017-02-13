@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <title>OPE</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="empleo.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-toggle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>  -->
+    <link rel="stylesheet" type="text/css" href="plantilla.css" />
+</head>
+
+<body>
+    <div id="barraSuperior">
+		<img id = "imagenSuperior" src="logo.PNG" onclick = "cambiarSeccion('0')"></img>
+		<img id = "imagenSuperior2" src="logo2.PNG" onclick = "cambiarSeccion('0')"></img>
+		<p id = "titulo" onclick = "cambiarSeccion('0')"> OFICINA DE PRÁCTICAS Y EMPLEO </p>
+		<p id = "tituloOPE2" onclick = "cambiarSeccion('0')"> OPE </p>
+    </div>
+	<div id="menu">
+		<nav>
+			<ul>
+				<li id="enlace1" onclick = "cambiarSeccion('1')">Noticias</li>
+				<li id="enlace2" onclick = "cambiarSeccion('2')">Empleo</li>
+				<li id="actual" onmouseover = "mostrarSubMenu()">Becas  ⌵
+					<div class ="submenu"style = "margin-left: -10px" onmouseleave = "ocultarSubMenu()">
+						<nav>
+							<ul>
+								<li class = "subseccion" id="sub1" onclick = "cambiarSubseccion('1')">Colaboración</li>
+								<li class = "subseccion" id="sub2" onclick = "cambiarSubseccion('2')">FARO</li>
+								<li class = "subseccion" id="sub3" onclick = "cambiarSubseccion('3')">ARGO</li>
+								<li class = "subseccion" id="sub4" onclick = "cambiarSubseccion('4')">CRUE-ONCE</li>
+							</ul>
+						</nav>
+					</div>
+				</li>
+				<li id="enlace4" onclick = "cambiarSeccion('4')">Formación</li>
+				<li id="enlace5" onclick = "cambiarSeccion('5')">Estudiantes</li>
+				<li id="enlace6" onclick = "cambiarSeccion('6')">Seguros</li>
+				<li class="icon">
+					 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+    <div id="panelPrincipal">
+
+	<div class = "panelContenido" id = "panel1">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Colaboración en Departamentos</strong></h1>
+			<p style = "cursor: pointer"><strong>Resolución de la Secretaría de Estado de Educación, Formación Profesional y Universidades, por la que se convocan Becas-Colaboración de estudiantes en Departamentos universitarios para el curso académico 2016/2017 (Extracto de la convocatoria, BOE 9 de julio de 2016).</strong>
+			<p>Es objeto de esta convocatoria es  promover la iniciación en tareas de investigación de los estudiantes universitarios que vayan a finalizar los estudios de segundo ciclo o último curso de grado o que estén cursando primer curso de masteres universitarios oficiales.  Son compatibles solamente con las becas de carácter General convocadas por el Ministerio de Educación, Cultura y Deporte para el curso 2016/2017.  No obstante en los casos de premios u otras modalidades de ayuda que se otorguen exclusivamente en atención al rendimiento académico, la compatibilidad deberá soliitarse por el estudiante o por la entidad convocante a la Dirección general de política Universitaria.
+			<p>La solicitud se deberá cumplimentar mediante el formulario accesible por internet en la dirección www.mecd.gob.es a través de la sede electrónica del Ministerio de Educación, Cultura y Deporte en el apartado correspondiente a "Trámites y Servicios".
+			<p>Las solicitudes se presentarán telemáticamente (ya no hay que presentarlo en el Servicio de Becas). Junto a la solicitud deberá presentarse también telemáticamente un Proyecto de colaboración avalado y puntuado hasta con 4 puntos por el Departamento, escaneado o fotografiado.
+				Los Departamentos a los que se puede optar por haberle otorgado plaza el Consejo Social de la Universidad Complutense se encuentran expuestos en el Tablón de Anuncios del Servicio de Becas y en la dirección www.ucm.es/consejo-social.
+			<p>PLAZO DE PRESENTACIÓN: <strong>hasta el 15 de Septiembre de 2016.</strong>
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Requisitos</strong></h1>
+			<ul>
+				<li>No haber disfrutado ya de una beca de colaboración en Departamento en cursos anteriores, para grado, licenciatura o master.
+				<li>No estar en posesión o en disposición legal de obtener un título académico de Licenciado, Ingeniero, Arquitecto, Graduado o Master oficial.
+				<li>Haber superado todo el primer ciclo y al menos el 45 por ciento de los créditos que integran el segundo ciclo, con excepción de los estudiantes de Medicina que deberán haber superado el 60 por ciento de los mismos. En el caso de los estudiantes de Grado encontrarse cursando los últimos  créditos para completar los requisitos para la obtención del título, y haber superado 180 créditos. Los alumnos de Derecho que cursen sus estudios por asignaturas deberán haber superado los cuatro primeros cursos en su totalidad y estar matriculados de todo lo que le reste para finalizar sus estudios.
+				<li> Estar matriculado en 2016-2017 en enseñanza oficial de la totalidad de las asignaturas o créditos que le resten para finalizar sus estudios.
+					Para los alumnos de primer curso de Masteres Oficiales no estar en posesión o disposición legal de obtener un título académico de Master Oficial o de Doctor y estar matrIculado en 2016/2017 en enseñanza Oficial de la totalidad de las asignaturas o créditos de primer curso de master.
+				<li><strong>Tener como nota media de:</strong> 
+					<ul>
+						<li>7,25 puntos para la rama de Ingeniería y Arquitectura o Enseñanzas Técnicas.
+						<li>7,70 puntos para las ramas de Ciencias  o Ciencias Experimentales y para Ciencias Sociales y Jurídicas
+						<li>7,80 puntos para la rama de Ciencias de la Salud.
+						<li>8,00 puntos para la rama e Artes y Humanidades
+						<li>Importante: Los alumnos deberán de tener una nota media igual o superior para poder optar a la beca.
+					</ul>
+				<li><strong>Proyecto de colaboración avalado y puntuado por el Consejo de Departamento.</strong>
+			</ul>
+			<p>De acuerdo con el artículo 84 de la Ley 30/1992 las Universidades harán públicos los listados provisionales de candidatos con indicación de las calificaciones medias, puntuación otorgada al proyecto de colaboración y el departamento en el que vaya a prestarse la colaboración. Asimismo los listados contendrán las solictudes propuestas para su denegación indicando la causa de la misma para que los interesados, en el plazo de 10 días, aleguen y presenten los documentos y justificaciones que estimen pertinentes.
+			
+			<div id = "botonAceptar">Acceder</div>
+		</div>
+		<br>
+		<br>
+		<br>
+	</div>
+	
+	
+	
+	<div class = "panelContenido" id = "panel2">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>FARO</strong></h1>
+			<p> <strong>FARO</strong> es un programa promovido y financiado por el Ministerio de Educación, Cultura y Deporte de España (en adelante Ministerio de Educación) cuyo propósito es fomentar la movilidad de estudiantes de últimos cursos de todas las universidades españolas mediante la realización de prácticas formativas de calidad en empresas ubicadas en Europa, Estados Unidos y Canadá y en empresas españolas o multinacionales de Asia y Oceanía. El objetivo último del programa es favorecer su transición del sistema educativo a la vida laboral mediante la mejora de sus competencias, aptitudes y actitudes.
+			<p> Para el estudiante constituye un primer contacto con la realidad profesional de su sector en un contexto internacional, lo que le permite adquirir nuevos conocimientos y habilidades. Para la empresa, contar con un colaborador cualificado potenciando de ese modo su relación con otros mercados.
+			<p> Las ayudas se conceden de forma continua durante la vigencia del programa, siendo el 31 de diciembre de 2017 la fecha límite de inicio de las estancias. La duración media de las prácticas es de seis meses.
+			<p> El Ministerio promueve este programa desde el año 2002 gestionándose desde entonces  cinco ediciones. Las tres primeras (2002-2008) ofrecían estancias en países de la Unión Europea y asociados, mientras que las dos últimas (2008-2013), correspondientes a FARO Global, ampliaron los destinos a empresas situadas en Asia, EE.UU y Canadá. Desde entonces se ha hecho posible que más de 4000 estudiantes de  150 titulaciones  y pertenecientes a 68 universidades españolas hayan disfrutado de un periodo de prácticas en empresas de 65 países distintos.
+			<div id = "botonAceptar">Acceder</div>
+		</div>
+	</div>
+	
+	
+	
+	<div class = "panelContenido" id = "panel3">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>ARGO</strong></h1>
+			<p><strong>ARGO</strong> es un programa de movilidad promovido por el Ministerio de Educación, Cultura y Deporte, cuyo objetivo es impulsar la formación complementaria de los titulados de todas las universidades españolas a través de la realización de prácticas en empresas de Europa, de EE.UU., Canadá y empresas españolas o multinacionales con sede en Asia u Oceanía.
+			<p>El programa ARGO tiene una duración de tres años y se va a desarrollar entre 2014 y 2017.  La concesión de ayudas se va a realizar de forma continua hasta el 31 de diciembre de 2017. El plazo de solicitud para acceder a una ayuda ARGO está abierto hasta el 1 de septiembre de 2017.
+			<p>A lo largo de la convocatoria se va a conceder un total de 630 ayudas para realizar 330 prácticas en empresas europeas, 180 en EE.UU. y Canadá, 120 en empresas españolas o multinacionales con sede en Asia u Oceanía.
+			<p>De forma más específica, a los titulados universitarios, el programa ARGO les permite:
+			<ul>
+				<li>Obtener una primera experiencia profesional en una empresa.
+				<li>Completar su formación académica.
+				<li>Acercarse a la realidad empresarial en un contexto internacional y mejorar sus competencias profesionales.
+				<li>Aumentar sus posibilidades de inserción profesional.
+				<li>Mejorar sus conocimientos lingüísticos en el país de destino.
+			</ul>
+			<p>Por su parte, a las empresas el programa les brinda la oportunidad de conocer y valorar a potenciales futuros trabajadores para su empresa, que se incorporan en prácticas con una cualificación elevada, conocimientos académicos actualizados y amplias competencias lingüísticas. Esta experiencia contribuye asimismo a su internacionalización y a la mejora de sus recursos humanos, y puede servir para abrir nuevas vías de negocio en otros entornos.
+			
+			<div id = "botonAceptar">Acceder</div>
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Promotores</strong></h1>
+			<p><strong>ARGO</strong> es un programa financiado por el Ministerio de Educación, Cultura y Deporte, a través de la Secretaría de Estado de Educación, Formación Profesional y Universidades.
+			<p>Desde el año 2009, la Fundación para el Fomento en Asturias de la Investigación Científica Aplicada y la Tecnología (FICYT)  es la entidad encargada de la gestión a nivel nacional del programa de ayudas ARGO.
+		</div>
+		<br>
+			<br>
+			<br>
+		
+	</div>
+	
+	
+	
+	<div class = "panelContenido" id = "panel4">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Becas Fundación CRUE-ONCE</strong></h1>
+			<img class = "imagenTexto" src = "img/crue-once.png" style = "cursor: pointer" style = "width: 80px"></img>
+			<p>Teniendo en cuenta el objetivo prioritario de Fundación ONCE de la formación y el empleo de las personas con discapacidad, junto el objetivo de las universidades de garantizar la igualdad de oportunidades y la inclusión de los estudiantes con discapacidad, se pone en marcha con la cofinanciación del Fondo Social Europeo, un programa de prácticas para estudiantes universitarios con discapacidad.
+			<p><strong>Descripción:</strong> Programa de prácticas para estudiantes universitarios con discapacidad, con el objetivo de promover la realización de prácticas académicas externas, facilitando su acceso a una primera experiencia laboral y mejorando así sus oportunidades laborales y su carrera profesional, desarrollando alguna experiencia laboral antes de terminar sus estudios incrementan sus expectativas de disfrutar de un empleo.
+			<p><strong>Dirigido a:</strong> estudiantes matriculados en las Universidades españolas miembros de la CRUE por todo el territorio. Cada Universidad participante realizará la selección de sus becados.
+			<p><strong>Duración:</strong> 3 meses. 25h/semanales.
+			<p><strong>Cuantía:</strong> 1800€. 600€/mes.
+			<p><strong>Periodo de inscripción:</strong> Del 1 de noviembre al 31 de diciembre.
+			<p><strong>Desarrollo prácticas:</strong> Desde el 1 de febrero a 31 de octubre.
+		</div>
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center"><strong>Convocatoria 2016/2017</strong></h1>
+			<img class = "imagenTexto" src = "img/discapacidad.png" style = "width: 95%"></img>
+			<p style = "text-align: center"><strong>Plazo de solicitud finalizado.</strong>
+			<p style = "cursor: pointer"><strong>BASES DE LA CONVOCATORIA</strong>
+			<p style = "cursor: pointer"><strong>TÉRMINOS Y CONDICIONES LEGALES</strong>
+		</div>
+		<br>
+			<br>
+			<br>
+		
+	</div>
+	
+	
+	
+	
+	</div>
+	<div id = "footer">
+		<div id = "redesSociales">
+			<img class = "iconoRedSocial" src = "img/twitter-icon.png"></img>
+			<img class = "iconoRedSocial" src = "img/fb-icon.png" style = "height: 32px; margin-top: -5px"></img>
+		</div>
+		<div id = "informacionLegal">
+			<p> ¿Qué es la OPE? </p>
+			<p> Localización y contacto </p>
+			<p> Aviso legal </p>
+		</div>
+	</div>
+</body>
+
+</html>

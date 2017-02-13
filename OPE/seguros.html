@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <title>OPE</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="empleo.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-toggle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>  -->
+    <link rel="stylesheet" type="text/css" href="plantilla.css" />
+</head>
+
+<body>
+    <div id="barraSuperior">
+		<img id = "imagenSuperior" src="logo.PNG" onclick = "cambiarSeccion('0')"></img>
+		<img id = "imagenSuperior2" src="logo2.PNG" onclick = "cambiarSeccion('0')"></img>
+		<p id = "titulo" onclick = "cambiarSeccion('0')"> OFICINA DE PRÁCTICAS Y EMPLEO </p>
+		<p id = "tituloOPE2" onclick = "cambiarSeccion('0')"> OPE </p>
+    </div>
+	<div id="menu">
+		<nav>
+			<ul>
+				<li id="enlace1" onclick = "cambiarSeccion('1')">Noticias</li>
+				<li id="enlace2" onclick = "cambiarSeccion('2')">Empleo</li>
+				<li id="enlace3" onclick = "cambiarSeccion('3')">Becas</li>
+				<li id="enlace4" onclick = "cambiarSeccion('4')">Formación</li>
+				<li id="enlace5" onclick = "cambiarSeccion('5')">Estudiantes</li>
+				<li id="actual" onmouseover = "mostrarSubMenu()">Seguros ⌵
+					<div class ="submenu" style = "margin-left: -10px" onmouseleave = "ocultarSubMenu()">
+						<nav>
+							<ul>
+								<li class = "subseccion" id="sub1" onclick = "cambiarSubseccion('1')">Escolar</li>
+								<li class = "subseccion" id="sub2" onclick = "cambiarSubseccion('2')">De viajes</li>
+								<li class = "subseccion" id="sub3" onclick = "cambiarSubseccion('3')">Accidentes</li>
+								<li class = "subseccion" id="sub3" onclick = "cambiarSubseccion('4')">Responsabilidad civil</li>
+							</ul>
+						</nav>
+					</div>
+				</li>
+				<li class="icon">
+					 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	
+    <div id="panelPrincipal">
+
+		<div class = "panelContenido" id = "panel1">
+			<div class = "panelEmpleo" style="min-height:510px;">
+			<h1 style = "text-align: center" ><strong>Seguro Escolar</strong></h1>
+			<p >
+				El seguro escolar protege a los estudiantes menores de 28 años que cursen estudios oficiales mediante prestaciones sanitarias y económicas en caso de enfermedad, accidente escolar o infortunio familiar.
+			</p>
+			
+			<p>
+			<strong>Información:</strong>
+			</p>
+			<p>C/ López de Hoyos, 169-171
+			<p>28002 MADRID
+			<p>Teléfono(s): 91 590 7100 - 91 566 0805 / 0810 / 0804
+							<div class = "imagenTexto" id="mapouter"><div id="gmap_canvas"><iframe width="600" height="500" frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Calle de López de Hoyos, 169-171, 28002 Madrid, Spagna, &t=&z=14&ie=UTF8&iwloc=&output=embed" marginwidth="0"></iframe><a class="addmaps"href="http://www.embedgooglemap.net"id="get-map-data">embedgooglemap.net</a></div><style>#gmap_canvas{height:300;width:500;}#mapouter{overflow:hidden;height:300px;width:400px;float: right; margin-top:-120px;margin-bottom: 150px;}</style></div>
+
+			<p>Nº de Fax: 91 590 7257
+			<p>Información general nacional: 901 16 65 65 (Lunes a viernes laborales de 9 a 14 horas)</p>
+			<strong>Enlaces de interés</strong>
+			<p>
+			<a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/media/www/pag-82963//Gu%C3%ADa%20del%20Seguro%20Escolar.pdf" class="link-seguros">Guía del Seguro Escolar</a>
+			</p>
+			<p>
+			<a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/media/www/pag-82963/Relacion%20Clinicas%20Seguro%20Escolar.pdf" class="link-seguros">Relación de clínicas concertadas</a>
+			</div>
+		</div>
+		
+		
+		<div class = "panelContenido" id="panel2">
+			<div class = "panelEmpleo">
+				<h1 style = "text-align: center" ><strong>Incluye asistencia sanitaria</strong></h1>
+				<p>
+					Los estudiantes que forman parte de acuerdos de movilidad académica de ámbito internacional o que realizarán prácticas académicas externas curriculares o extracurriculares en el extranjero, deben suscribir un seguro de asistencia en viaje que contemple gastos médicos, repatriación y regreso anticipado y responsabilidad civil, entre otras coberturas. 
+				</p>
+				<p>
+					El seguro es válido también para profesores e investigadores universitarios que realizarán estancias en el extranjero, y para estudiantes extranjeros que vienen a estudiar a la Universidad Complutense de Madrid.
+				</p>
+				<p>
+				<strong>Compañía aseguradora:</strong> ARAG
+				</p>
+				<p>
+				<strong>Número de póliza:</strong> 55-1161202 (españoles en el extranjero) / 55-1161217 (extranjeros en España)
+				</p>
+				<p>
+				<a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/media/www/pag-82964/Certificado%20Mapfre%20Seguro%20Responsabilidad%20Civil.pdf">Certificado de la póliza y coberturas</a>
+				</p>
+
+			
+			</div>
+			<div class = "panelEmpleo">
+				<h1 style = "text-align: center" ><strong>Cómo contratar el Seguro</strong></h1>
+				<p>
+					<strong>Teléfono de Servicio al Cliente:</strong> 93 300 10 50 si la llamada se realiza desde España y el 34 93 300 10 50 si se realiza desde el extranjero (puede efectuarse a cobro revertido).
+				</p>
+				<p>
+					<strong>Prima anual por estudiante:</strong> 27,11 € / año (Europa y resto del Mundo)
+				</p>
+				<p>
+				<strong>Compañía aseguradora:</strong> ARAG
+				</p>
+				<p>
+				<strong>Contratación e información sobre coberturas en la página web: </strong>
+				<a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/media/www/pag-82964/Certificado%20Mapfre%20Seguro%20Responsabilidad%20Civil.pdf">Certificado de la póliza y coberturas</a>
+				</a>
+					<p>
+					(pago con tarjeta de crédito)
+					</p>
+					<p>
+				<strong>Contratación e información sobre coberturas en la página web: </strong> 55-1161202 (españoles en el extranjero) / 55-1161217 (extranjeros en España)
+				</p>
+				<p>
+				<a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/media/www/pag-82964/Certificado%20Mapfre%20Seguro%20Responsabilidad%20Civil.pdf">Certificado de la póliza y coberturas</a>
+				</a>
+				</p>
+
+				
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+		
+		
+		
+		<div class = "panelContenido" id="panel3">
+			<div class = "panelEmpleo">
+				<h1 style = "text-align: center" ><strong>Seguro de accidentes para mayores de 28 años y estudiantes de formación permanente</strong></h1>
+				<p>
+					Los estudiantes mayores de 28 años y todos los estudiantes matriculados en alguna actividad de formación permanente (títulos propios o formación continua) no están cubiertos por el Seguro Escolar del Estado y deben contar obligatoriamente con un seguro de accidentes para poder realizar prácticas académicas externas curriculares o extracurriculares.
+				</p>
+				<p>
+					La UCM ha suscrito una póliza colectiva que también está indicada para todos aquellos estudiantes que deseen ampliar las coberturas del Seguro Escolar.
+				</p>
+				<p>
+					Aunque se recomienda suscribir la póliza contratada por la UCM, cualquier otra póliza que cubra contingencias semejantes también es válida.
+				</p>
+				<p>
+				<strong>Compañía aseguradora:</strong> AIG (Aon Cover Agencia de Suscripción)
+				</p>
+				<p>
+				<strong>Número de póliza:</strong> 66201500065
+				</p>
+				<p>
+				<strong>Teléfono de Servicio al Cliente: </strong> 902.195.583
+				</p>
+
+				
+			</div>
+			<div class = "panelEmpleo">
+				<h1 style = "text-align: center" ><strong>Cómo contratar el Seguro</strong></h1>
+				<p>
+					<strong>Para mayores de 28 años contratación e información sobre coberturas en la página web:</strong> <a style="color: black; text-decoration: none;" href="http://www.aon.es/site/seguro-estudiantes/seguro-accidentes/ ">http://www.aon.es/site/seguro-estudiantes/seguro-accidentes/ 
+				</a>
+				</p>
+				<p>
+				   (pago por transferencia bancaria)
+
+
+				</p>
+				<p>
+				Prima anual por estudiante: 26,16 €
+				</p>
+				<p>
+				<strong>Procedimiento para directores de títulos propios o cursos de formación continua que suscriban y paguen el seguro de accidentes:</strong>
+				</p>
+				<p>
+				Enviar al Servicio de Acción Social (acsocialseguros@ucm.es) el listado de estudiantes que deben suscribir el seguro, indicando sus DNI y fechas de nacimiento.
+
+				El Servicio de Acción Social emitirá la póliza y el recibo con cargo al título propio o curso de formación continua.
+				</p>
+				
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+	
+	
+	
+	<div class = "panelContenido" id = "panel4">
+		<div class = "panelEmpleo">
+			<h1 style = "text-align: center" ><strong>Seguro de Responsabilidad Civil</strong></h1>
+			<p>
+			Seguro de Responsabilidad Civil
+			La Universidad Complutense dispone de un seguro que da cobertura a la responsabilidad civil
+			de todos los colectivos (estudiantes, profesorado y personal de administración y servicios) en
+			todo el mundo excepto en Estados Unidos y Canadá.
+			</p>
+			<p>
+			<strong>Compañía aseguradora:</strong> Mapfre Seguros de Empresas
+			</p>
+			<p>
+			<strong>Número de póliza:</strong> 0961570027363
+			</p>
+			<p>
+			<a style="color: black; text-decoration: none;" href="https://www.ucm.es/data/cont/media/www/pag-82964/Certificado%20Mapfre%20Seguro%20Responsabilidad%20Civil.pdf">Certificado de la póliza y coberturas</a>
+			</p>
+		</div>
+	</div>
+	
+	</div>
+	<div id = "footer">
+		<div id = "redesSociales">
+			<img class = "iconoRedSocial" src = "img/twitter-icon.png"></img>
+			<img class = "iconoRedSocial" src = "img/fb-icon.png" style = "height: 32px; margin-top: -5px"></img>
+		</div>
+		<div id = "informacionLegal">
+			<p> ¿Qué es la OPE? </p>
+			<p> Localización y contacto </p>
+			<p> Aviso legal </p>
+		</div>
+	</div>
+</body>
+
+</html>

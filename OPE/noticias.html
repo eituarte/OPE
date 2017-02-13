@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <title>OPE</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="noticias.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="bootstrap-toggle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-toggle.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>  -->
+    <link rel="stylesheet" type="text/css" href="plantilla.css" />
+</head>
+
+<body>
+    <div id="barraSuperior">
+		<img id = "imagenSuperior" src="logo.PNG" onclick = "cambiarSeccion('0')"></img>
+		<img id = "imagenSuperior2" src="logo2.PNG" onclick = "cambiarSeccion('0')"></img>
+		<p id = "titulo" onclick = "cambiarSeccion('0')"> OFICINA DE PRÁCTICAS Y EMPLEO </p>
+		<p id = "tituloOPE2" onclick = "cambiarSeccion('0')"> OPE </p>
+    </div>
+	<div id="menu">
+		<nav>
+			<ul>
+				<li id="actual">Noticias</li>
+				<li id="enlace2" onclick = "cambiarSeccion('2')">Empleo</li>
+				<li id="enlace3" onclick = "cambiarSeccion('3')">Becas</li>
+				<li id="enlace4" onclick = "cambiarSeccion('4')">Formación</li>
+				<li id="enlace5" onclick = "cambiarSeccion('5')">Estudiantes</li>
+				<li id="enlace6" onclick = "cambiarSeccion('6')">Seguros</li>
+				<li class="icon">
+					 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+    <div id="panelPrincipal">
+
+	<div class = "panelContenido" id = "panel1">
+		<div class = "panelNoticias">
+			
+			<div id = "slider">
+				<ul class = "slides">
+					<li class = "slide" onmouseenter = "mostrarResumen('1')" onmouseleave = "ocultarResumen('1')"><img class = "slideImg" src = "img/slide ope.png"></img>
+						<div class = "slideOpacity"></div>
+						<div class = "texto" id = "texto1">
+							<h1 class = "tituloNoticia">Tablón oficial de la OPE</h1>
+							<ul class = "subtituloNoticia">
+								<li>Accede a la oficina para encontrar tus prácticas</li>
+							</ul>
+						</div>
+					</li>
+					<li class = "slide" onmouseenter = "mostrarResumen('2')" onmouseleave = "ocultarResumen('2')"><img class = "slideImg" src = "img/slide becas.png"></img>
+						<div class = "slideOpacity"></div>
+						<div class = "texto" id = "texto2">
+						<h1 class = "tituloNoticia">Tablón de empleo público</h1>
+						<ul class = "subtituloNoticia">
+							<li>Anuncios</li>
+						</ul>
+						</div>
+					</li>
+					<li class = "slide" onmouseenter = "mostrarResumen('3')" onmouseleave = "ocultarResumen('3')"><img class = "slideImg" src = "img/slide conv.png"></img>
+						<div class = "slideOpacity"></div>
+						<div class = "texto" id = "texto3">
+						<h1 class = "tituloNoticia">Beca de formación</h1>
+						<ul class = "subtituloNoticia">
+							<li> Formación permanente en la Delegación del Rector</li>
+						</ul>
+						</div>
+					</li>
+					<li class = "slide" onmouseenter = "mostrarResumen('4')" onmouseleave = "ocultarResumen('4)"><img class = "slideImg" src = "img/slide talent.png"></img>
+						<div class = "slideOpacity"></div>
+						<div class = "texto" id = "texto4">
+							<h1 class = "tituloNoticia">V Edición Jumping Talent</h1>
+							<ul class = "subtituloNoticia">
+								<li>Universia Empleo</li>
+							</ul>
+						</div>
+					</li>
+					<li class = "slide" onmouseenter = "mostrarResumen('1')" onmouseleave = "ocultarResumen('1')"><img class = "slideImg" src = "img/slide ope.png"></img>
+						<div class = "slideOpacity"></div>
+						<div class = "texto" id = "texto1">
+						<h1 class = "tituloNoticia">Tablón oficial de la OPE</h1>
+						<ul class = "subtituloNoticia">
+							<li>Accede a la oficina para encontrar tus prácticas</li>
+						</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id = "opciones">
+				<div class = "listaOpciones">
+					<div class = "opcion"><p>Boletines oficiales</p></div>
+					<div class = "opcion"><p>Tablón de premios</p></div>
+					<div class = "opcion"><p>Formación con teléfono</p></div>
+				</div>
+			</div>
+
+		</div>
+		<div style = "width: 100%">
+		<div style = "margin: auto; width: 80%">
+		<div class = "panelCuadricula" id = "panel2" style = "float: left">
+			<div class = "cuadricula">
+				<h3 style = "text-align: center"><strong>SEGUNDA EDICIÓN YUZZ SANTANDER</strong></h3>
+				<p>El próximo 18 de enero, el Vicerrector de Transferencia del Conocimiento y Emprendimiento, acompañado de la Decana de la Facultad de Ciencias Económicas y Empresariales, el Director de Relaciones Institucionales de Santander Universidades España y la Directora de Compluemprende, inaugurará esta nueva edición del Programa Yuzz Santander, en la que participarán los 20 proyectos seleccionados por nuestra universidad.
+			</div>
+			<div class = "cuadricula">
+			<h3 style = "text-align: center"><strong>IX EDICIÓN DE STARTUP PROGRAMME</strong></h3>
+				<p>Comienza la nueva edición de la competición para emprendedores universitarios Startup Programme. Puedes apuntarte hasta el 28 de octubre. Las bases y el formulario de inscripción los puedes encontrar en la web del programa.
+				<p style = "text-align: center" style = "cursor: pointer"><strong>STARTUP PROGRAMME</strong>
+			</div>
+			<div class = "cuadricula">
+			<h3 style = "text-align: center"><strong>SPIN2016. Model2Market: el impulso que necesita tu modelo de negocio</strong></h3>
+				<p>Dos proyectos de la Universidad Compluense de Madrid han sido seleccionados en la competición de modelos de negocio Model2Market..
+				<p>S2 Biotech y Tyre Barrier serán 2 de los 30 modelos de negocio finalistas que competirán en el Spin2016.
+				<p>Más información en:
+				<p style = "text-align: center"><strong>www.spin2016.org</strong>
+				<p style = "text-align: center" style = "cursor: pointer"><strong>STARTUP PROGRAMME</strong>
+			</div>
+		</div>
+		
+		<div class = "panelCuadricula" id = "panel2" style = "float: right">
+			<div class = "cuadricula">
+				<h3 style = "text-align: center"><strong>VI EDICIÓN PREMIOS EMPRENDEDOR UCM</strong></h3>
+				<p>El día 16 de noviembre a las 17:00 el Rector de la Universidad Complutense de Madrid, Carlos Andradas, hizo entrega de la VI Edición de los Premios Emprendedor UCM a las mejores ideas, proyectos y empresas de base tecnológica de nuestra universidad. Si deseas ampliar la información puedes hacerlo pinchando <strong style = "cursor: pointer">aquí</strong>
+			</div>
+			<div class = "cuadricula">
+				<h3 style = "text-align: center"><strong>PROGRAMA INTERNACIONAL UCM-SANTANDER</strong></h3>
+				<p>En el marco de la relación institucional entre la Universidad Complutense de Madrid y el Banco de Santander, el Vicerrectorado de Transferencia del Conocimiento y Emprendimiento pone en marcha el Programa Internacional UCM-Santander de visitas a ecosistemas emprendedores de referencia dirigido fundamentalmente a personal docente y estudiantes.
+				<p>Si quieres conocer más sobre el Programa, DESCÁRGATE la información.
+				<p style = "cursor: pointer; text-align: center"><strong>Programa Internacional UCM-Santander de visitas a ecosistemas emprendedores de referencia</strong>
+			</div>
+			<div class = "cuadricula">
+				<h3 style = "text-align: center"><strong>BoosterWE. Proyectos seleccionados</strong></h3>
+				<p>El programa BoosterWE de RedEmprendia abre su convocatoria para apoyar la creación de nuevas empresas de universitarios y universitarias de América Latina, España y Portugal. Creado por RedEmprendia, la red de la universidades emprendedoras, y con el soporte de Fomin-BID y Banco Santander -a través de Santander Universidades-, BoosterWE ofrece a los emprendedores y emprendedoras una experiencia internacional única con la que adquirir y mejorar sus conocimientos en gestión empresarial, liderazgo y nuevos mercados.
+				<p>Si quieres tener más información, consulta  la siguiente información:
+				<p style = "cursor: pointer; text-align: center"><strong>Proyectos seleccionados</strong>
+				<p style = "cursor: pointer; text-align: center"><strong>https://www.redemprendia.org/boosterwe</strong>
+			</div>
+			<br>
+		<br>
+		<br>
+		</div>
+		
+		</div>
+		
+		</div>
+	</div>
+	
+	</div>
+	<div id = "footer">
+		<div id = "redesSociales">
+			<img class = "iconoRedSocial" src = "img/twitter-icon.png"></img>
+			<img class = "iconoRedSocial" src = "img/fb-icon.png" style = "height: 32px; margin-top: -5px"></img>
+		</div>
+		<div id = "informacionLegal">
+			<p> ¿Qué es la OPE?</p>
+			<p> Localización y contacto </p>
+			<p> Aviso legal </p>
+		</div>
+	</div>
+</body>
+
+</html>
